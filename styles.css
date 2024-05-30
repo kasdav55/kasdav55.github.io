@@ -1,13 +1,22 @@
 body {
     font-family: Arial, sans-serif;
-    text-align: center;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 #clickArea {
-    margin-top: 50px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-#clickButton, #buyBoostButton {
+button {
     padding: 10px 20px;
     margin: 10px;
     background-color: #4CAF50;
@@ -15,8 +24,14 @@ body {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-#clickButton:hover, #buyBoostButton:hover {
+button:hover {
     background-color: #45a049;
 }
+
+p {
+    margin: 10px 0;
+}
+
