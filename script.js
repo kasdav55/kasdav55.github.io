@@ -27,9 +27,19 @@ function buyBoost() {
     }
 }
 
-document.getElementById("clickButton").addEventListener("click", function() {
+function handleClick() {
     clickCount++;
     updateClickCount();
-});
+}
 
+function handleSpacebar(event) {
+    if (event.keyCode === 32) {
+        handleClick();
+    }
+}
+
+document.getElementById("clickButton").addEventListener("click", handleClick);
 document.getElementById("buyBoostButton").addEventListener("click", buyBoost);
+
+// Add event listener for spacebar key press
+document.addEventListener("keydown", handleSpacebar);
