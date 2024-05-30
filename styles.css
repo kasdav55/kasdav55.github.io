@@ -1,0 +1,22 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+#clickArea {
+    margin-top: 50px;
+}
+
+#clickButton, #buyBoostButton {
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#clickButton:hover, #buyBoostButton:hover {
+    background-color: #45a049;
+}
